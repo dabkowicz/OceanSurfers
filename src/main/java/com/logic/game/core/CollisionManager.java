@@ -1,4 +1,4 @@
-package main.java.com.logic.game.core;
+package com.logic.game.core;
 
 public class CollisionManager {
 }

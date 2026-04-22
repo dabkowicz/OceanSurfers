@@ -13,10 +13,10 @@ public class Fish {
 
     //sterowanie ryba
     public void move(float tiltX, float tiltY) {
-        //tiltX przechylenie telefonu na boki
+        //tiltX =  przechylenie telefonu na boki
         position.x += tiltX * 5;
 
-        //tiltY to pochylenie przod/tyl - wplywa na predkosc y
+        //tiltY = pochylenie przod/tyl - wplywa na predkosc y
         position.y += tiltY * 2;
 
         //zabezpieczenie: ryba nie może wyplynac poza ekran zalozona szereokosc 500

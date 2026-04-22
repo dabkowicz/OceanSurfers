@@ -1,4 +1,4 @@
-package main.java.com.logic.game.player;
+package com.logic.game.player;
 
 public class PlayerPhysics {
 }

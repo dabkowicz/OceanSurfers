@@ -1,4 +1,4 @@
-package main.java.com.logic.game.bonuses;
+package com.logic.game.bonuses;
 
 public class BonusType {
 }

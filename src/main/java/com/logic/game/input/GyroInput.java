@@ -1,4 +1,4 @@
-package main.java.com.logic.game.input;
+package com.logic.game.input;
 
 public class GyroInput {
 }
