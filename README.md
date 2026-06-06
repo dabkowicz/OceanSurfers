@@ -227,7 +227,7 @@ The project is intended as an educational Android game prototype focused on gyro
 
 ## Author
 
-Created by 
+Created by - [@dabkowicz](https://github.com/dabkowicz)
 
 AGH University of Krakow
 
