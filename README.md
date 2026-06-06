@@ -40,7 +40,7 @@ Features:
 
 ---
 
-### 🦈 Obstacles
+### Obstacles
 
 The game currently contains:
 
