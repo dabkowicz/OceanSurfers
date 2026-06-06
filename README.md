@@ -8,6 +8,22 @@ This project focuses primarily on game logic, gyroscope-based movement, collisio
 
 ---
 
+# Logic Module Only
+
+This repository contains the core game logic used by the OceanSurfers Android project.
+
+The Android UI, rendering layer, resources and platform-specific implementation are intentionally separated from this module.
+
+Main focus:
+- Game Engine
+- Gyroscope-based player movement
+- Collision Detection
+- Difficulty Scaling
+- Obstacle Management
+- Score System
+- Bonus System
+
+
 ## Gameplay
 
 - Control the fish by tilting your phone left and right.
