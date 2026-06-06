@@ -1,30 +1,29 @@
 package com.logic.game.player;
+
 import com.logic.game.utils.Vector2D;
+import com.logic.game.utils.Constants;
 
 public class Fish {
-    private Vector2D position; // pozycja
-    private int width = 50;    // jak szeroka jest (do kolizji)
-    private int height = 30;   // jak wysoka jest
+    private Vector2D position;
+    private PlayerPhysics physics;
 
     public Fish(float startX, float startY) {
-        //pozycja startowa
         this.position = new Vector2D(startX, startY);
+        this.physics = new PlayerPhysics();
     }
 
-    //sterowanie ryba
-    public void move(float tiltX, float tiltY) {
-        //tiltX =  przechylenie telefonu na boki
-        position.x += tiltX * 5;
+    public void update(float tiltX, float tiltY) {
+        position.x += physics.calculateNewVelocityX(tiltX);
+        position.y += physics.calculateNewVelocityY(tiltY);
 
-        //tiltY = pochylenie przod/tyl - wplywa na predkosc y
-        position.y += tiltY * 2;
-
-        //zabezpieczenie: ryba nie może wyplynac poza ekran zalozona szereokosc 500
+        //wall protection (permanent ones)
         if (position.x < 0) position.x = 0;
-        if (position.x > 450) position.x = 450;
+        if (position.x > Constants.SCREEN_WIDTH - 50) position.x = Constants.SCREEN_WIDTH - 50;
+
+        if (position.y < 0) position.y = 0;
+        if (position.y > Constants.SCREEN_HEIGHT - 50) position.y = Constants.SCREEN_HEIGHT - 50;
     }
 
-    // getter pozwalajacy innym klasom na sprawdzenie polozenia ryby
     public Vector2D getPosition() {
         return position;
     }
